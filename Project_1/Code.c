@@ -4,3 +4,15 @@
 /*Task3 find x=(Number of upper case char)-(total char) , in str(isuppper funtion)*/
 /*Task4 find mod(x), if its >0 and flag==true, print its a good sentence otherwise bad sentence(fabs function)*/
 /*Code Below This*/
+#include <stdio.h>
+int main()
+{
+    //Task1 start
+    FILE *fp;
+    char str[60];
+    fp=fopen("file.txt","r");
+    fgets(str,60,fp);
+    fclose(fp);
+    //Task1 end 
+    return(0);
+}
