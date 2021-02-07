@@ -6,7 +6,6 @@
 /*Code Below This*/
 #include <stdio.h>
 #include <string.h>
-#include<string.h>
 #include<ctype.h>
 #include<math.h>
 char *strrev(char *str)
@@ -33,7 +32,7 @@ int main()
     fgets(str,60,fp);
     fclose(fp);
     
-    //Task2
+    //Task2 start
     char temp[60];
     strcpy(temp,str); //temp=s
     int flag;
@@ -44,14 +43,11 @@ int main()
     else{
         flag=0;
     }
-    return(0);
-}
-
-// Task1 start
-    char str[50]= "Lewd did I live & evil I did dweL.";
+      
+     
+    // Task3 start
     int x,b=0 ;
     int i,a;
-    printf("number of total char=%u", sizeof(str));
     a=sizeof(str);
     //a=total no. of char in string
     //b=total no. of upper char in string
@@ -61,10 +57,11 @@ int main()
         if(isupper(str[i]))
         b++;
     }
-     printf("\n number of upper char=%d",b);
-     x=a-b;
-     printf("\nx=%d",x);
-         return 0;
+    x=a-b;
+    printf("\nx=%d flag=%d",x,flag);
+    return(0);
 }
+
+
 
 
