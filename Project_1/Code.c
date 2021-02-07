@@ -25,15 +25,15 @@ char *strrev(char *str)
 
 int main()
 {
-    //Task1 start
+    //Task1 --Garvit
     FILE *fp;
-    char str[60];
+    char str[34];
     fp=fopen("file.txt","r");
     fgets(str,60,fp);
     fclose(fp);
     
-    //Task2 start
-    char temp[60];
+    //Task2 --Dhruvi
+    char temp[34];
     strcpy(temp,str); //temp=s
     int flag;
     strrev(str);
@@ -45,7 +45,7 @@ int main()
     }
       
      
-    // Task3 start
+    // Task3 --Divesh
     int x,b=0 ;
     int i,a;
     a=sizeof(str);
@@ -58,15 +58,20 @@ int main()
         b++;
     }
     x=a-b;
-    printf("\nx=%d flag=%d",x,flag);
-     x=fabs(x)
-    If (x>0 and flag==0){
-    Printf("it's a good statement")
-    Else{
-    Printf("it's a bad statement")
+      
+    //task4 --Dinesh 
+    x=fabs(x);
+    printf("\nx=%d flag=%d\n",x,flag);
+    if(x>0 & flag==1)
+    {
+    printf("it's a good statement");
+    }
+    else{
+    printf("it's a bad statement");
+    }      
+          
     return(0);
 }
-
 
 
 
