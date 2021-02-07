@@ -18,3 +18,34 @@ int main()
     
     return(0);
 }
+// Task 2 start
+#include <string.h>
+
+char *strrev(char *str)
+{
+      char *p1, *p2;
+
+      if (! str || ! *str)
+            return str;
+      for (p1 = str, p2 = str + strlen(str) - 1; p2 > p1; ++p1, --p2)
+      {
+            *p1 ^= *p2;
+            *p2 ^= *p1;
+            *p1 ^= *p2;
+      }
+      return str;
+}
+
+int main()
+{
+    char str[50] = "madam";
+    char temp[50];
+    strcpy(temp, str); // temp=s
+    strrev(str);
+    if(strcmp(str, temp) == 0)
+printf("The entered string is a palindrome.");
+else
+printf("The entered string is not a palindrome.");
+}
+//Task2 end
+Return 0;
