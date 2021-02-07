@@ -59,6 +59,11 @@ int main()
     }
     x=a-b;
     printf("\nx=%d flag=%d",x,flag);
+     x=fabs(x)
+    If (x>0 and flag==0){
+    Printf("it's a good statement")
+    Else{
+    Printf("it's a bad statement")
     return(0);
 }
 
