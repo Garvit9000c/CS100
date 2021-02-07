@@ -15,7 +15,6 @@ int main()
     fclose(fp);
     //Task1 end 
     
-    //task 2 demo
-    printf(str);
+    
     return(0);
 }
