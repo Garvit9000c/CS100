@@ -14,5 +14,8 @@ int main()
     fgets(str,60,fp);
     fclose(fp);
     //Task1 end 
+    
+    //task 2 demo
+    printf(str);
     return(0);
 }
