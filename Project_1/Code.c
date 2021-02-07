@@ -6,6 +6,9 @@
 /*Code Below This*/
 #include <stdio.h>
 #include <string.h>
+#include<string.h>
+#include<ctype.h>
+#include<math.h>
 char *strrev(char *str)
 {
       char *p1, *p2;
@@ -42,6 +45,26 @@ int main()
         flag=0;
     }
     return(0);
+}
+
+// Task1 start
+    char str[50]= "Lewd did I live & evil I did dweL.";
+    int x,b=0 ;
+    int i,a;
+    printf("number of total char=%u", sizeof(str));
+    a=sizeof(str);
+    //a=total no. of char in string
+    //b=total no. of upper char in string
+    //x=diffrence of a and b in modulus
+    for(i=0;i<=a;i++)
+    {
+        if(isupper(str[i]))
+        b++;
+    }
+     printf("\n number of upper char=%d",b);
+     x=a-b;
+     printf("\nx=%d",x);
+         return 0;
 }
 
 
